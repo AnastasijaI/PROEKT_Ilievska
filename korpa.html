@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>MAN</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" type="text/css" href="zad1.css">
+        <link rel="stylesheet" type="text/css" href="korpa.css">
+
+        <script src="zad1.js" > </script>
+        <script src="zad2.js" > </script>
+
+    </head>
+    <body style="background-color: beige;">
+        <section id="header">
+            <a href="#"><img src="LOGO2.png" class="logo"></a>
+            <div>
+                <ul id="pole">
+                    <li><a class="active" href="zad2.html" class="pomos">Home</a></li>
+                    <li class="dropdown"><a class="pomos">Perfumes</a>
+                        <ul class="subcategories">
+                            <li><a href="man.html">Man</a></li>
+                            <li><a href="woman.html">Woman</a></li>
+                            <li><a href="kids.html">Kids</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="pomos">Contact</a></li> 
+                    <li><a href="zad1.html" class="pomos">Login</a></li>
+                    <li><a href="korpa.html" class="pomos"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div id="orderForm">
+                <h2>Order</h2>
+                <form id="myForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+        
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname">
+        
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+        
+               
+                    <label for="productCode">Product Code:</label>
+            <select id="productCode" name="productCode" required>
+                <option value="" disabled selected>Select an Image</option>
+                <option value="scandal.jpg">Man</option>
+                <option value="armani2.jpg">Woman</option>
+                <option value="kid4.jpg">Kids</option>
+            </select>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div id="checkout" class="hidden">
+                <form id="checkoutForm">
+                    <h2>Checkout</h2>
+
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required>
+        
+                    <label for="cardName">Cardholder Name:</label>
+                    <input type="text" id="cardName" name="cardName" required>
+        
+                    <button type="button" onclick="processOrder()">Complete Purchase</button>
+                </form>
+    </section>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+    

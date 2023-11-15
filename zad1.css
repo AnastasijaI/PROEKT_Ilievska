@@ -1,0 +1,421 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    background:gray;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    background: gray;
+    justify-content: space-between;
+    gap:16px;
+}
+.column .row #pom{
+    margin-left: 90px;
+}
+.container{
+    display: flex;
+}
+
+.imgContainer{
+    display: flex;
+    flex:1;
+    max-height: 100svh;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+
+.formContainer{
+    padding: 16px;
+    border: 1px solid lightgray;
+    border-radius: 10%;
+    background-color: aliceblue;
+    position: absolute;
+    top:30%;
+    left:65%;
+    z-index: 1;
+}
+.formContainer .row #submitButton{
+    color: black;
+    border: darkgray;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 90px;
+}
+
+.title{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    color: white;
+    font-family: "Gill Sans Extrabold", sans-serif;
+}
+.title2{
+    position: absolute;
+    left: 10%;
+    top: 26%;
+    color:snow;
+    font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#header img{
+    width: 90px; 
+    height: auto;
+}
+
+#pole{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pole li{
+    list-style: none;
+    padding: 0 30px;
+    position: relative;
+}
+#pole li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: azure;
+    transition: 0.3s ease;
+}
+#pole li a:hover,
+#pole li a.active{
+    color: gold;
+}
+#pole li a.active::after,
+#pole li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: gold;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+#pocetna{
+    background-image: url(bg.jpg);
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 25% right 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#pocetna .naslov{
+    font-size: 50px;
+    color: brown;
+    margin-bottom: 2px;
+    padding-left: 30px;
+}
+#pocetna p{
+    font-size: 25px;
+    padding-bottom: 15px;
+    color: darkred;
+    margin-bottom: 10px;
+}
+#pocetna button{
+    background-image: url(butimg.png);
+    background-color: transparent;
+    color: gold;
+    border: 0;
+    padding: 14px 20px 14px 20px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#pomos.active {
+    color: gold;
+}
+.section-p1{
+    padding: 40px 80px ;
+    background-color: whitesmoke;
+}
+#produkt1{
+    text-align: center;
+}
+#produkt1 .pro-container
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#produkt1 p{
+    font-size: 50px;
+}
+#produkt1 .pro{
+    width: 23%;
+    height: 10%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    position: relative;
+
+}
+#produkt1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.2s ease;
+}
+#produkt1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#produkt1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#produkt1 .pro .des span{
+    color: darkgray;
+}
+#produkt1 .pro .des h4{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+    margin: 0px;
+}
+#produkt1 .pro .des i{
+    font-size: 12px;
+    color: gold;
+}
+#produkt1 .pro .des h3{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: blue;
+}
+#produkt1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: blue;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:beige;
+    background-color: black;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    margin: -20px;
+}
+
+#anketa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:beige;
+    background-color: black;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    margin: 0;;
+    padding: 0;
+}
+#anketa button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color:black;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+#anketa button:hover{
+    background-color: brown;
+}
+
+#info
+{
+    margin: 0;
+    padding: 0;
+}
+#naslovank{
+    background-color: bisque;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:black;
+
+}
+#naslovank p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.question{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    background-color: beige;
+}
+#ank{
+    background-color: beige;
+    color: black;
+}
+
+#ank p{
+    font-size: 20px;
+}
+#sub{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color:black;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#dekfooter{
+    background-color: antiquewhite;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.footer-about,
+.contact,
+.social {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section.social a {
+    font-size: 20px;
+    margin: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section.social a:hover {
+    color: #007bff;
+}
+
+
+.dropdown .subcategories {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    background-color: black;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .subcategories {
+    display: block;
+}
+
+.dropdown a.pomos {
+    position: relative;
+    text-decoration: none;
+}
+
+.dropdown a.pomos::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    margin-left: 10px;
+}
+
+
+#cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:brown;
+    background-color: antiquewhite;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    margin: 0;
+}

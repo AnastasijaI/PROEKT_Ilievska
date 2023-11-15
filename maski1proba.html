@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>MAN</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" type="text/css" href="zad1.css">
+        <link rel="stylesheet" type="text/css" href="korpa.css">
+
+        <script src="zad1.js" > </script>
+        <script src="zad2.js" > </script>
+
+    </head>
+    <body style="background-color: beige;">
+        <section id="header">
+            <a href="#"><img src="LOGO2.png" class="logo"></a>
+            <div>
+                <ul id="pole">
+                    <li><a class="active" href="zad2.html" class="pomos">Home</a></li>
+                    <li class="dropdown"><a class="pomos">Perfumes</a>
+                        <ul class="subcategories">
+                            <li><a href="man.html">Man</a></li>
+                            <li><a href="woman.html">Woman</a></li>
+                            <li><a href="kids.html">Kids</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="pomos">Contact</a></li> 
+                    <li><a href="zad1.html" class="pomos">Login</a></li>
+                    <li><a href="korpa.html" class="pomos"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="product">
+                <div id="prv">
+                <img src="m2.jpg" alt="">
+                <p>Introducing our 80ml perfume, a captivating <br>
+                    fragrance that enchants with its alluring scent.<br>
+                     Perfect for both day and evening wear, it exudes <br>
+                     elegance and sophistication, making you feel confident<br>
+                      and ready for any occasion. Elevate your presence with<br>
+                       this exquisite perfume and leave a lasting impression <br>
+                       wherever you go. Embrace the essence of luxury and <br>
+                       indulge in a fragrance that defines your unique style.</p>
+                </div>
+                <div id="commentSection">
+                    <h2>Comments</h2>
+                    <textarea id="commentInput" placeholder="Add your comment..."></textarea>
+                    <button onclick="addComment()">Add Comment</button>
+                    <div id="comments"></div>
+                </div>
+
+                <div id="likeSection">
+                    <button id="likeButton" onclick="Lajkovi()">Like</button>
+                    <div id="likesCount">0 Likes</div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div id="checkout" class="hidden">
+                <form id="checkoutForm">
+                    <h2>Checkout</h2>
+
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required>
+        
+                    <label for="cardName">Cardholder Name:</label>
+                    <input type="text" id="cardName" name="cardName" required>
+        
+                    <button type="button" onclick="processOrder()">Complete Purchase</button>
+                </form>
+    </section>
+        <script src="script.js"></script>
+    </body>
+</html>
